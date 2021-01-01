@@ -49,7 +49,7 @@ export interface WebsiteConfig {
 }
 
 const config: WebsiteConfig = {
-  title: 'Ricette di mamma',
+  title: 'Il Bombo della Salvia',
   description: 'Le ricette di una volta',
   coverImage: 'img/blog-cover.jpg',
   logo: 'img/logo.png',
