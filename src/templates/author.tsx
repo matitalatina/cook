@@ -142,9 +142,9 @@ const Author = ({ data, location }: AuthorTemplateProps) => {
                       </div>
                     )}
                     <div className="author-stats" css={[HiddenMobile]}>
-                      {totalCount > 1 && `${totalCount} posts`}
-                      {totalCount === 1 && '1 post'}
-                      {totalCount === 0 && 'No posts'}
+                      {totalCount > 1 && `${totalCount} ricette`}
+                      {totalCount === 1 && '1 ricetta'}
+                      {totalCount === 0 && 'Nessuna ricetta'}
                     </div>
                     {author.website && (
                       <AuthorSocialLink className="author-social-link">

@@ -105,9 +105,9 @@ const Tags = ({ pageContext, data, location }: TagTemplateProps) => {
                   tagData.node.description
                 ) : (
                   <>
-                    A collection of {totalCount > 1 && `${totalCount} posts`}
-                    {totalCount === 1 && '1 post'}
-                    {totalCount === 0 && 'No posts'}
+                    A collection of {totalCount > 1 && `${totalCount} ricette`}
+                    {totalCount === 1 && '1 ricetta'}
+                    {totalCount === 0 && 'Nessuna ricetta'}
                   </>
                 )}
               </SiteDescription>
