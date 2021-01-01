@@ -2,10 +2,10 @@
 layout: post
 title: Github Source
 image: img/callum-shaw-555357-unsplash.jpg
-author: [Ghost]
+author: [Camilla Capelli]
 date: 2019-03-10T10:00:00.000Z
 tags:
-  - Source
+  - Primo piatto
 excerpt: Where to find this project on GitHub.
 ---
 

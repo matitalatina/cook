@@ -1,4 +1,4 @@
-# gatsby-casper
+# Cook mama
 
 Demo: https://gatsby-casper.netlify.app
 

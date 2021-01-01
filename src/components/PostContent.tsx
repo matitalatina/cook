@@ -108,10 +108,10 @@ export const PostFullContent = styled.section`
 
   a:hover {
     /* color: var(--blue); */
-    color: ${colors.blue};
+    color: ${colors.primary};
     text-decoration: none;
     /* box-shadow: var(--blue) 0 -1px 0 inset; */
-    box-shadow: ${colors.blue} 0 -1px 0 inset;
+    box-shadow: ${colors.primary} 0 -1px 0 inset;
   }
 
   strong,
@@ -158,7 +158,7 @@ export const PostFullContent = styled.section`
   blockquote {
     margin: 0 0 1.5em;
     padding: 0 1.5em;
-    border-left: #3eb0ef 3px solid;
+    border-left: ${colors.primary} 3px solid;
   }
   @media (max-width: 500px) {
     blockquote {
@@ -259,7 +259,7 @@ export const PostFullContent = styled.section`
   h6 {
     /* color: color(var(--darkgrey) l(-5%)); */
     color: ${lighten('-0.05', colors.darkgrey)};
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    font-family: 'Lobster', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
       'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
@@ -338,7 +338,7 @@ export const PostFullContent = styled.section`
     padding: 0.4em 1em 0.9em;
     border: 0;
     /* color: var(--blue); */
-    color: ${colors.blue};
+    color: ${colors.primary};
     font-family: Georgia, serif;
     font-size: 3.2rem;
     line-height: 1.35em;

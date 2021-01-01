@@ -4,6 +4,7 @@ import Img from 'gatsby-image';
 import _ from 'lodash';
 import { lighten } from 'polished';
 import React from 'react';
+import '@fontsource/lobster';
 
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
@@ -73,7 +74,7 @@ export const PostCard: React.FC<PostCardProps> = ({ post, large = false }) => {
             </span>
             <span className="post-card-byline-date">
               <time dateTime={datetime}>{displayDatetime}</time>{' '}
-              <span className="bull">&bull;</span> {post.timeToRead} min read
+              <span className="bull">&bull;</span> {post.timeToRead} minuti di lettura
             </span>
           </PostCardBylineContent>
         </PostCardMeta>
@@ -183,7 +184,7 @@ const PostCardContentLink = css`
 const PostCardPrimaryTag = styled.div`
   margin: 0 0 0.2em;
   /* color: var(--blue); */
-  color: ${colors.blue};
+  color: ${colors.primary};
   font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: 0.2px;

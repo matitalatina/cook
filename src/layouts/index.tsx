@@ -5,7 +5,35 @@ import { lighten } from 'polished';
 
 // eslint-disable-next-line @typescript-eslint/prefer-ts-expect-error
 // @ts-ignore
-import favicon from '../../src/favicon.ico';
+import favicon from '../../src/content/img/favicon/favicon.ico';
+// @ts-ignore
+import appleIcon57 from '../../src/content/img/favicon/apple-icon-57x57.png';
+// @ts-ignore
+import appleIcon60 from '../../src/content/img/favicon/apple-icon-60x60.png';
+// @ts-ignore
+import appleIcon72 from '../../src/content/img/favicon/apple-icon-72x72.png';
+// @ts-ignore
+import appleIcon76 from '../../src/content/img/favicon/apple-icon-76x76.png';
+// @ts-ignore
+import appleIcon114 from '../../src/content/img/favicon/apple-icon-114x114.png';
+// @ts-ignore
+import appleIcon120 from '../../src/content/img/favicon/apple-icon-120x120.png';
+// @ts-ignore
+import appleIcon144 from '../../src/content/img/favicon/apple-icon-144x144.png';
+// @ts-ignore
+import appleIcon152 from '../../src/content/img/favicon/apple-icon-152x152.png';
+// @ts-ignore
+import appleIcon180 from '../../src/content/img/favicon/apple-icon-180x180.png';
+// @ts-ignore
+import androidIcon192 from '../../src/content/img/favicon/android-icon-192x192.png';
+// @ts-ignore
+import favicon32 from '../../src/content/img/favicon/favicon-32x32.png';
+// @ts-ignore
+import favicon96 from '../../src/content/img/favicon/favicon-96x96.png';
+// @ts-ignore
+import favicon16 from '../../src/content/img/favicon/favicon-16x16.png';
+// @ts-ignore
+import msIcon144 from '../../src/content/img/favicon/ms-icon-144x144.png';
 import { colors } from '../styles/colors';
 
 interface IndexProps {
@@ -17,6 +45,23 @@ const IndexLayout: React.FC<IndexProps> = props => {
     <div className={props.className}>
       <Helmet>
         <link rel="icon" href={favicon} type="image/x-icon" />
+        <link rel="apple-touch-icon" sizes="57x57" href={appleIcon57} />
+        <link rel="apple-touch-icon" sizes="60x60" href={appleIcon60} />
+        <link rel="apple-touch-icon" sizes="72x72" href={appleIcon72} />
+        <link rel="apple-touch-icon" sizes="76x76" href={appleIcon76} />
+        <link rel="apple-touch-icon" sizes="114x114" href={appleIcon114} />
+        <link rel="apple-touch-icon" sizes="120x120" href={appleIcon120} />
+        <link rel="apple-touch-icon" sizes="144x144" href={appleIcon144} />
+        <link rel="apple-touch-icon" sizes="152x152" href={appleIcon152} />
+        <link rel="apple-touch-icon" sizes="180x180" href={appleIcon180} />
+        <link rel="icon" type="image/png" sizes="192x192" href={androidIcon192} />
+        <link rel="icon" type="image/png" sizes="32x32" href={favicon32} />
+        <link rel="icon" type="image/png" sizes="96x96" href={favicon96} />
+        <link rel="icon" type="image/png" sizes="16x16" href={favicon16} />
+        {/* <link rel="manifest" href="/manifest.json" /> */}
+        <meta name="msapplication-TileColor" content={colors.primary} />
+        <meta name="msapplication-TileImage" content={msIcon144} />
+        <meta name="theme-color" content={colors.primary} />
       </Helmet>
       <Global
         styles={css`
@@ -294,7 +339,7 @@ const IndexLayout: React.FC<IndexProps> = props => {
 
           ::selection {
             text-shadow: none;
-            background: ${lighten('0.3', colors.blue)};
+            background: ${lighten('0.3', colors.primary)};
           }
 
           hr {
@@ -408,7 +453,7 @@ const IndexLayout: React.FC<IndexProps> = props => {
           }
 
           a {
-            color: ${lighten('-0.05', colors.blue)};
+            color: ${lighten('-0.05', colors.primary)};
             text-decoration: none;
           }
 
@@ -426,6 +471,7 @@ const IndexLayout: React.FC<IndexProps> = props => {
             line-height: 1.15;
             font-weight: 600;
             text-rendering: optimizeLegibility;
+            font-family: 'Lobster';
           }
 
           h1 {

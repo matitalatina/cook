@@ -101,6 +101,10 @@ export interface PageContext {
   };
 }
 
+export const Author = styled.h4`
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+`;
+
 const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
   const post = data.markdownRemark;
   let width = '';
@@ -200,19 +204,19 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                   <section className="post-full-byline-content">
                     <AuthorList authors={post.frontmatter.author} tooltip="large" />
                     <section className="post-full-byline-meta">
-                      <h4 className="author-name">
+                      <Author className="author-name">
                         {post.frontmatter.author.map(author => (
                           <Link key={author.id} to={`/author/${_.kebabCase(author.id)}/`}>
                             {author.id}
                           </Link>
                         ))}
-                      </h4>
+                      </Author>
                       <div className="byline-meta-content">
                         <time className="byline-meta-date" dateTime={datetime}>
                           {displayDatetime}
                         </time>
                         <span className="byline-reading-time">
-                          <span className="bull">&bull;</span> {post.timeToRead} min read
+                          <span className="bull">&bull;</span> {post.timeToRead} minuti di lettura
                         </span>
                       </div>
                     </section>
@@ -438,7 +442,7 @@ const PostFullImage = styled.figure`
 
 export const query = graphql`
   query($slug: String, $primaryTag: String) {
-    logo: file(relativePath: { eq: "img/ghost-logo.png" }) {
+    logo: file(relativePath: { eq: "img/logo.png" }) {
       childImageSharp {
         fixed {
           ...GatsbyImageSharpFixed
