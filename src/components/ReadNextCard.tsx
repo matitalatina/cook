@@ -3,6 +3,7 @@ import React from 'react';
 import { lighten } from 'polished';
 import styled from '@emotion/styled';
 import * as _ from 'lodash';
+import { it } from 'date-fns/locale'
 
 import { colors } from '../styles/colors';
 import { format } from 'date-fns';
@@ -46,7 +47,7 @@ export const ReadNextCard: React.FC<ReadNextProps> = props => {
             // 2018-08-20
             const datetime = format(date, 'yyyy-MM-dd');
             // 20 AUG 2018
-            const displayDatetime = format(date, 'dd LLL yyyy');
+            const displayDatetime = format(date, 'dd LLL yyyy', { locale: it });
             return (
               <li key={n.node.frontmatter.title}>
                 <h4>

@@ -5,6 +5,7 @@ import _ from 'lodash';
 import { lighten } from 'polished';
 import React from 'react';
 import '@fontsource/lobster';
+import { it } from 'date-fns/locale'
 
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
@@ -23,7 +24,7 @@ export const PostCard: React.FC<PostCardProps> = ({ post, large = false }) => {
   // 2018-08-20
   const datetime = format(date, 'yyyy-MM-dd');
   // 20 AUG 2018
-  const displayDatetime = format(date, 'dd LLL yyyy');
+  const displayDatetime = format(date, 'dd LLL yyyy', {locale: it});
 
   return (
     <article
